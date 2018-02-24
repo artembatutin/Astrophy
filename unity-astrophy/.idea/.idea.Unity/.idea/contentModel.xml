@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Editor" t="Include">
+          <e p="JetBrains" t="Include">
+            <e p="Unity3DRider.cs" t="Include" />
+          </e>
+          <e p="SettingsTexturePackerImporter.txt" t="Include" />
+        </e>
+        <e p="Game" t="Include">
+          <e p="Astro" t="Include">
+            <e p="Astro.cs" t="Include" />
+            <e p="AstroCamera.cs" t="Include" />
+            <e p="AstroGhost.cs" t="Include" />
+            <e p="Crippler" t="Include">
+              <e p="Crippler.cs" t="Include" />
+            </e>
+            <e p="Goblino" t="Include">
+              <e p="Goblino.cs" t="Include" />
+              <e p="Wall.cs" t="Include" />
+              <e p="WallController.cs" t="Include" />
+            </e>
+            <e p="Pythago" t="Include">
+              <e p="Pythago.cs" t="Include" />
+            </e>
+            <e p="Raey" t="Include">
+              <e p="Raey.cs" t="Include" />
+            </e>
+            <e p="Timex" t="Include">
+              <e p="Timex.cs" t="Include" />
+            </e>
+          </e>
+          <e p="CameraSize.cs" t="Include" />
+          <e p="Constants.cs" t="Include" />
+          <e p="Obstacles" t="Include">
+            <e p="Flybee" t="Include">
+              <e p="Flybee.cs" t="Include" />
+            </e>
+            <e p="Star" t="Include">
+              <e p="Star.cs" t="Include" />
+            </e>
+            <e p="Threat.cs" t="Include" />
+            <e p="ThreatController.cs" t="Include" />
+            <e p="ThreatEnd.cs" t="Include" />
+            <e p="ThreatStart.cs" t="Include" />
+          </e>
+          <e p="Scene" t="Include">
+            <e p="Background.cs" t="Include" />
+          </e>
+        </e>
+        <e p="UI" t="Include">
+          <e p="Effects" t="Include">
+            <e p="ShipEffect.cs" t="Include" />
+            <e p="ShipFall.cs" t="Include" />
+            <e p="SlideEffect.cs" t="Include" />
+          </e>
+          <e p="impl" t="Include">
+            <e p="GameScene.cs" t="Include" />
+            <e p="MenuScene.cs" t="Include" />
+            <e p="SelectionScene.cs" t="Include" />
+          </e>
+          <e p="UIManager.cs" t="Include" />
+          <e p="UIScene.cs" t="Include" />
+          <e p="UISceneType.cs" t="Include" />
+        </e>
+        <e p="Util" t="Include">
+          <e p="ColorShifter.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+      <e p="Unity.sln" t="IncludeFlat" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2017.3/resharper-host/local/Transient/ReSharperHost/v11/SolutionCaches/_Unity.-751663200.00" t="ExcludeRecursive" />
+  </component>
+</project>
