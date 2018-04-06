@@ -29,6 +29,7 @@ public class Person : MonoBehaviour {
 			ParticleSystem s = Instantiate(Spawner.instance.splatter, transform);
 			s.Play();
 			gameObject.AddComponent<AutoDestruct>();
+			Spawner.instance.CountDown();
 		}
 
 		dying = true;

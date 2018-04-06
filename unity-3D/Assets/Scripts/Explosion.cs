@@ -3,7 +3,7 @@
 public class Explosion : MonoBehaviour {
 
 	private const int EXPLOSION_LAYER = 11;
-	private const float TIME_MOD = 4f;
+	private const float TIME_MOD = 5f;
 	private const float RADIUS_MAX = 2f;
 	
 	private SphereCollider col;

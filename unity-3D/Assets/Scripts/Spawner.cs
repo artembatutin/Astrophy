@@ -1,14 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class Spawner : MonoBehaviour {
+	
+	public static Spawner instance;
 
 	public int spawning = 30;
 	public Person[] civilians;
-	private Vector3[] spawns;
+	public Text civiliansText;
 
-	public static Spawner instance;
+	private int active;
+	private int spawned;
+	private Vector3[] spawns;
 	public ParticleSystem splatter;
 
 	void Start () {
@@ -29,7 +32,16 @@ public class Spawner : MonoBehaviour {
 				Quaternion.identity);
 			p.name = "Civilian";
 			p.transform.parent = transform;
+			spawned++;
 		}
+
+		active = spawned;
+		civiliansText.text = active + "/" + spawned;
+	}
+
+	public void CountDown() {
+		active--;
+		civiliansText.text = active + "/" + spawned;
 	}
 	
 }
