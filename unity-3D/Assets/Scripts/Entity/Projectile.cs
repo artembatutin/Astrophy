@@ -45,7 +45,7 @@ public class Projectile : MonoBehaviour {
 	}
 
 	private void explode(Vector3 pos) {
-		ParticleSystem s = Instantiate(Spawner.instance.explosion, pos, Quaternion.identity);
+		ParticleSystem s = Instantiate(EntityController.instance.explosion, pos, Quaternion.identity);
 		s.Play();
 		s.gameObject.AddComponent<AutoDestruct>();
 		Destroy(gameObject);

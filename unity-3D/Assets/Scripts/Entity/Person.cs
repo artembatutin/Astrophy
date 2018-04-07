@@ -35,9 +35,9 @@ public class Person : MonoBehaviour {
 			s.gameObject.AddComponent<AutoDestruct>();
 			Destroy(gameObject);
 			if(civilian)
-				Spawner.instance.CivilianDown();
+				EntityController.instance.CivilianDown();
 			else
-				Spawner.instance.MilitaryDown();
+				EntityController.instance.MilitaryDown();
 		}
 
 		lastHit = Time.time;
@@ -46,7 +46,7 @@ public class Person : MonoBehaviour {
 	}
 
 	protected virtual ParticleSystem part() {
-		return Spawner.instance.splatter;
+		return EntityController.instance.splatter;
 	}
 
 }

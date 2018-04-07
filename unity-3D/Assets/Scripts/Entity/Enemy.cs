@@ -44,7 +44,7 @@ public class Enemy : Person {
 	}
 
 	protected override ParticleSystem part() {
-		return Spawner.instance.explosion;
+		return EntityController.instance.explosion;
 	}
 
 	private bool inCombat() {

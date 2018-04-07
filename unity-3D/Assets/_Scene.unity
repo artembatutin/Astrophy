@@ -1299,10 +1299,6 @@ MonoBehaviour:
   - {fileID: 114579040152449684, guid: 8e03636c139c743b6baeb9049ff3f0a3, type: 2}
   - {fileID: 114285669508810018, guid: 5423d5a1a6e3746e69263085205b5a62, type: 2}
   militaryText: {fileID: 2051930282}
-  activeSoldiers: 0
-  activCivilians: 0
-  spawned: 0
-  spawns: []
   splatter: {fileID: 198639534900036698, guid: 6aed4718857514a90b1eeaf9cc6b2f9f, type: 2}
   explosion: {fileID: 198312220119165282, guid: a852be9f59fdf45a6909a708b8199362,
     type: 2}

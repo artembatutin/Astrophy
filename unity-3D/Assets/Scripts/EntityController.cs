@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class Spawner : MonoBehaviour {
+public class EntityController : MonoBehaviour {
 	
-	public static Spawner instance;
+	public static EntityController instance;
 
 	public int spawning = 30;
 	public Person[] civilians;
