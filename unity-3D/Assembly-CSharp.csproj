@@ -43,6 +43,13 @@
     <NoStdLib>true</NoStdLib>
     <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
   </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneOSX:2</UnityBuildTarget>
+    <UnityVersion>2018.1.0b13</UnityVersion>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -52,104 +59,106 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshLink.cs" />
-    <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifier.cs" />
-    <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs" />
-    <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshSurface.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\BloomComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\DitheringComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\FogComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\FxaaComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\GrainComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\TaaComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\UserLutComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Components\VignetteComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Models\BloomModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Models\DitheringModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Models\FogModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Models\GrainModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Models\UserLutModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Models\VignetteModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\PostProcessingComponent.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\PostProcessingContext.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\PostProcessingModel.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\PostProcessingProfile.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
-    <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
-    <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
-    <Compile Include="Assets\Scripts\AutoDestruct.cs" />
-    <Compile Include="Assets\Scripts\Enemy.cs" />
-    <Compile Include="Assets\Scripts\Explosion.cs" />
-    <Compile Include="Assets\Scripts\Person.cs" />
-    <Compile Include="Assets\Scripts\Pooler.cs" />
-    <Compile Include="Assets\Scripts\ShipControl.cs" />
-    <Compile Include="Assets\Scripts\Spawner.cs" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\Fog.shader" />
-    <None Include="Assets\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\LutGen.shader" />
-    <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
-    <None Include="Assets\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
-    <None Include="Assets\PostProcessing\Utilities\CustomMotionTexture\Shaders\CustomMotionVectorTexture.shader" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\ACES.cginc" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
-    <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\Uber.shader" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\Blit.shader" />
-    <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
-    <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\FXAA3.cginc" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.shader" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
+    <Compile Include="Assets\Scripts\ArmySupportHandler.cs" />
+    <Compile Include="Assets\Scripts\Entity\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Entity\Explosion.cs" />
+    <Compile Include="Assets\Scripts\Entity\Person.cs" />
+    <Compile Include="Assets\Scripts\Entity\Projectile.cs" />
+    <Compile Include="Assets\Scripts\Entity\Ship.cs" />
+    <Compile Include="Assets\Scripts\EntityController.cs" />
+    <Compile Include="Assets\Scripts\Utils\AutoDestruct.cs" />
+    <Compile Include="Assets\Scripts\Utils\NavMeshComponents\Scripts\NavMeshLink.cs" />
+    <Compile Include="Assets\Scripts\Utils\NavMeshComponents\Scripts\NavMeshModifier.cs" />
+    <Compile Include="Assets\Scripts\Utils\NavMeshComponents\Scripts\NavMeshModifierVolume.cs" />
+    <Compile Include="Assets\Scripts\Utils\NavMeshComponents\Scripts\NavMeshSurface.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Components\BloomComponent.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Components\DitheringComponent.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Components\FogComponent.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Components\FxaaComponent.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Components\GrainComponent.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Components\TaaComponent.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Components\UserLutComponent.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Components\VignetteComponent.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Models\BloomModel.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Models\DitheringModel.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Models\FogModel.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Models\GrainModel.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Models\UserLutModel.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Models\VignetteModel.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\PostProcessingComponent.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\PostProcessingContext.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\PostProcessingModel.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\PostProcessingProfile.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
+    <Compile Include="Assets\Scripts\Utils\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Shaders\DepthOfField.shader" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Shaders\Fog.shader" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Shaders\LutGen.shader" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Utilities\CustomMotionTexture\Shaders\CustomMotionVectorTexture.shader" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Shaders\ACES.cginc" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Shaders\Uber.shader" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Shaders\Blit.shader" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Shaders\FXAA3.cginc" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Shaders\MotionBlur.shader" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
     <None Include="Assets\Models\Shaders\SilhouetteDiffuse.shader" />
-    <None Include="Assets\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\Common.cginc" />
-    <None Include="Assets\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
-    <None Include="Assets\PostProcessing\Editor Resources\UI\Trackball.shader" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.cginc" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\TAA.shader" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\TAA.cginc" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\GrainGen.shader" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\FXAA.shader" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.shader" />
-    <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
-    <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
-    <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Shaders\Common.cginc" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Editor Resources\UI\Trackball.shader" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Shaders\Bloom.cginc" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Shaders\TAA.shader" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Shaders\TAA.cginc" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Shaders\GrainGen.shader" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Shaders\FXAA.shader" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Shaders\Bloom.shader" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
+    <None Include="Assets\Models\Shaders\GlowDiffuse.shader" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
+    <None Include="Assets\Scripts\Utils\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/artembatutin/Documents/Projects/Fearox/astrophy/unity-3D/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
@@ -392,6 +401,7 @@
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -399,6 +409,16 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
