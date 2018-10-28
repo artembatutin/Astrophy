@@ -4,3 +4,7 @@ Your ship is crucially damaged, there is no choice but eject yourself from it! S
 
   - You have a magical power to create alienory force walls, draw a wall and bounce of it to avoid obstacles.
   - Collect gems and items on your way down.
+  
+  Demo: https://fearox.itch.io/astrophy
+  
+  ** This is a Unity 3D project. Unity 2D folder is a sample test folder.**
