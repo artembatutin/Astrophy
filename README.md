@@ -7,4 +7,6 @@ Your ship is crucially damaged, there is no choice but eject yourself from it! S
   
   Demo: https://fearox.itch.io/astrophy
   
-  **This is a Unity 3D project. Unity 2D folder is a sample test folder.**
+  **This is a Unity 3D project. Unity 2D folder is a sample test folder which includes another new game with different sprites.**
+  
+  [![N|Solid](https://img.itch.zone/aW1hZ2UvMjQyMDM0LzExNjA1NTgucG5n/347x500/GAMY1O.png)]()
